@@ -7,8 +7,8 @@ jobs:
     steps:
       - name: look directory
         run: |
+          ls -l
           pwd
-          ls
       - uses: ./ # Uses an action in the root directory
       - name: Hello world action step
         id: hello
