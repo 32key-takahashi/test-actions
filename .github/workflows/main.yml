@@ -5,6 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+      - name: look directory
+        run: |
+          pwd
+          ls
       - uses: ./ # Uses an action in the root directory
       - name: Hello world action step
         id: hello
